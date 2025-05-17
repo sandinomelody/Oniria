@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+ <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pinturas Originales a la Venta</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 10px;
+      display: flex;
+      a { color: #f4e8d9;
+    }
+
+    .sidebar {
+      width: 250px;
+      background-color: #000;
+      padding: 20px;
+      height: 100vh;
+      overflow-y: auto;
+      box-shadow: 2px 0 5px rgba(0,0,0,0.1);
+    }
+
+    .gallery {
+      flex: 1;
+      padding: 20px;
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+      gap: 20px;
+      background:  #f4e8d9;
+    }
+
+    .gallery-item {
+      background: #fafafa;
+      border: 1px solid #ddd;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .gallery-item:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    }
+
+    .gallery-item img {
+      width: 100%;
+      display: block;
+    }
+
+    .gallery-item .info {
+      padding: 10px;
+    }
+
+    .gallery-item .info h3 {
+      font-size: 16px;
+      margin: 0 0 5px;
+    }
+
+    .gallery-item .info p {
+      margin: 0;
+      color: #666;
+      font-size: 14px;
+    }
+
+    h2 {
+      margin-top: 0;
+    }
+
+    .filter {
+      margin-bottom: 20px;
+    }
+
+    .filter h3 {
+      font-size: 16px;
+      margin-bottom: 10px;
+      color: #f4e8d9;
+    }
+
+    .filter label {
+      display: block;
+      margin-bottom: 5px;
+      color: #f4e8d9;
+    }
+   
+
+  </style>
+</head>
+<body>
+
+  <aside class="sidebar">
+    <div>
+     <img src="logo negro.png" alt= "filter" style="height: 120px; margin-bottom:10px;" > 
+    <div class="filter">
+      <!-- Barra de menú negra -->
+  <nav class="menu-bar">
+    <ul>
+    <li><a href="pintura.html">Pintura</li>
+    <li><a href="escultura.html">Escultura</li>
+    <li><a href="curaduria.html">Curaduria</li>
+    <li><a href="vermas.html">Galerias de Arte</li>
+    <li><a href="vermas.html">Expocisiones</a>
+    <li><a href="artistas.html">Artistas</a>
+  </nav>
+    <div class="filter">
+      <h3>Estilo</h3>
+      <label><input type="checkbox"> Realismo</label>
+      <label><input type="checkbox"> Impresionismo</label>
+      <label><input type="checkbox"> Expresionismo</label>
+      <label><input type="checkbox"> Cubismo</label>
+      <label><input type="checkbox"> Surrealismo</label>
+      <label><input type="checkbox"> Abstracto</label>
+       <label><input type="checkbox"> Pop Art</label>
+    </div>
+    <!-- Puedes seguir agregando más filtros -->
+  </aside>
+
+  <main class="gallery">
+    <div class="gallery-item">
+      <img src="https://via.placeholder.com/250x250" alt="Obra 1">
+      <div class="info">
+        <h3>Nombre de la obra</h3>
+        <p>Artista - 2.844 €</p>
+      </div>
+    </div>
+
+    <div class="gallery-item">
+      <img src="https://via.placeholder.com/250x250" alt="Obra 2">
+      <div class="info">
+        <h3>Nombre de la obra</h3>
+        <p>Artista - 1.414 €</p>
+      </div>
+    </div>
+    <div class="gallery-item">
+      <img src="https://via.placeholder.com/250x250" alt="Obra 2">
+      <div class="info">
+        <h3>Nombre de la obra</h3>
+        <p>Artista - 1.414 €</p>
+      </div>
+    </div>
+    <div class="gallery-item">
+      <img src="https://via.placeholder.com/250x250" alt="Obra 2">
+      <div class="info">
+        <h3>Nombre de la obra</h3>
+        <p>Artista - 1.414 €</p>
+      </div>
+    </div>  
+
+    <div class="gallery-item">
+      <img src="https://via.placeholder.com/250x250" alt="Obra 1">
+      <div class="info">
+        <h3>Nombre de la obra</h3>
+        <p>Artista - 2.844 €</p>
+      </div>
+    </div>  
+    <div class="gallery-item">
+      <img src="https://via.placeholder.com/250x250" alt="Obra 1">
+      <div class="info">
+        <h3>Nombre de la obra</h3>
+        <p>Artista - 2.844 €</p>
+      </div>
+    </div>  
+      </div>
+    </div>
+
+    <!-- Agrega más obras duplicando el bloque .gallery-item -->
+  </main>
+
+</body>
+</html>

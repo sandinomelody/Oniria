@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Oniria Gallery</title>
+  <!-- Tipografías según diseño -->
+  <link href="https://fonts.google.com/share?selection.family=Manjari:wght@100;400;700" rel="Manjari bold" />
+  <style>
+    /* Reset global de enlaces */
+    a { text-decoration: none; color: inherit; }
+
+    /* Variables de color y tipografía */
+    :root {
+      --black: #000;
+      --white: #f4e8d9;
+      --turquoise: #7accc4;
+      --mauve: #b78a8a;
+      --footer-bg: var(--turquoise);
+      --font-heading: "Manjari bold", sans-serif;//
+      --font-body: "Lora", sans-serif;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: var(--font-body); color: var(--black); line-height: 1.6; background: var(--white); }
+
+ 
+    /* Barra de menú negra */
+    .menu-bar { display: flex; justify-content: center; gap: 1rem; background: var(--black);border-radius: 10px;
+      padding: 10px; }
+    .menu-bar a { color: var(--white); padding: 1rem 2rem; font-family: var(--font-heading); font-size: 1rem; text-transform: uppercase; letter-spacing: 1px; white-space: nowrap; }
+    <style>
+    body {
+      font-family: sans-serif;
+      margin: 0;
+      background-color: #fafafa;
+    }
+
+    h2 {
+      text-align: center;
+      font-size: 2.5em;
+      margin-top: 40px;
+      margin-bottom: 30px;
+    }
+
+    .artistas-container {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 30px;
+      padding: 20px;
+    }
+
+    .artista-card {
+      text-align: center;
+      width: 180px;
+    }
+
+    .artista-banner {
+      width: 180px;
+      height: 100px;
+      border-radius: 10px;
+      object-fit: cover;
+      position: relative;
+    }
+
+    .artista-foto {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      object-fit: cover;
+      position: relative;
+      top: -50px;
+      border: 5px solid white;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+    }
+
+    .artista-nombre {
+      font-weight: bold;
+      margin-top: -40px;
+    }
+
+    .artista-obras {
+      color: gray;
+      font-size: 0.9em;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #222;
+      color: white;
+      margin-top: 40px;
+    }
+
+  </style>
+</head>
+<body>
+   <!-- Barra de menú negra -->
+  <nav class="menu-bar">
+    <a href="pintura.html">Pintura</a>
+    <a href="escultura.html">Escultura</a>
+    <a href="curaduria.html">Curaduria</a>
+    <a href="vermas.html">Galerias de Arte</a>
+    <a href="vermas.html">Expocisiones</a>
+    <a href="artistas.html">Artistas</a>
+  </nav>
+
+  <h2>nuestros artistas</h2>
+
+  <div class="artistas-container">
+    <!-- Artista 1 -->
+    <div class="artista-card">
+      <img src="banner1.jpg" alt="Fondo" class="artista-banner">
+      <img src="foto1.jpg" alt="Yevgeny" class="artista-foto">
+      <div class="artista-nombre">Yevgeny Chernyakovsky</div>
+      <div class="artista-obras">76 obras de arte</div>
+    </div>
+
+    <!-- Artista 2 -->
+    <div class="artista-card">
+      <img src="banner2.jpg" alt="Fondo" class="artista-banner">
+      <img src="foto2.jpg" alt="Liubov" class="artista-foto">
+      <div class="artista-nombre">Liubov Kuptsova</div>
+      <div class="artista-obras">304 obras de arte</div>
+    </div>
+
+    <!-- Artista 3 -->
+    <div class="artista-card">
+      <img src="banner3.jpg" alt="Fondo" class="artista-banner">
+      <img src="foto3.jpg" alt="Mercedes" class="artista-foto">
+      <div class="artista-nombre">Mercedes Gordo</div>
+      <div class="artista-obras">213 obras de arte</div>
+    </div>
+
+    <!-- Artista 4 -->
+    <div class="artista-card">
+      <img src="banner4.jpg" alt="Fondo" class="artista-banner">
+      <img src="foto4.jpg" alt="Alexander" class="artista-foto">
+      <div class="artista-nombre">Alexander Aksyonov</div>
+      <div class="artista-obras">78 obras de arte</div>
+    </div>
+
+    <!-- Artista 5 -->
+    <div class="artista-card">
+      <img src="banner5.jpg" alt="Fondo" class="artista-banner">
+      <img src="foto5.jpg" alt="Dobrodiy" class="artista-foto">
+      <div class="artista-nombre">Dobrodiy Alexandr</div>
+      <div class="artista-obras">159 obras de arte</div>
+    </div>
+
+    <!-- Artista 6 -->
+    <div class="artista-card">
+      <img src="banner6.jpg" alt="Fondo" class="artista-banner">
+      <img src="foto6.jpg" alt="Olga" class="artista-foto">
+      <div class="artista-nombre">Olga Darchuk</div>
+      <div class="artista-obras">443 obras de arte</div>
+    </div>
+  </div>
+
+  <footer>
+    © 2025 Galería Oniria. Todos los derechos reservados.
+  </footer>
+
+</body>
+</html>
+
+
+
+  
